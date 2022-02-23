@@ -1,0 +1,25 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "Homepage for hicya.com",
+  "main": "index.js",
+  "repository": "https://github.com/hicya/hicya",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/css": "^11.7.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.19",
+    "@types/react": "^17.0.39",
+    "typescript": "^4.5.5"
+  }
+}
