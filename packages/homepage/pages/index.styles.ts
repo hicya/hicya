@@ -4,5 +4,6 @@ export default css`
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 100vh
+  height: 100vh;
+  font-size: 8em;
 `
