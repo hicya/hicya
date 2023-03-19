@@ -1,12 +1,14 @@
-from sqlalchemy import Column, text, String
-from sqlalchemy.dialects.postgresql import UUID
+import uuid
+from sqlalchemy import Column, String
 
 from .base import Base
+from .util.guid import GUID
 
 
 class User(Base):
-  __tablename__ = "user"
+    __tablename__ = "user"
 
-  # Columns
-  id = Column(UUID, primary_key=True, server_default=text("uuid_generate_v4()"))
-  email = Column(String)
+    # Columns
+    id = Column(GUID(), primary_key=True, default=lambda: str(uuid.uuid4()))
+    email = Column(String)
+    password = Column(String)
