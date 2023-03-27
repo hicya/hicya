@@ -1,0 +1,12 @@
+import { Provider } from "react-redux";
+import type { AppProps } from "next/app";
+
+import { store } from "@/store/store";
+
+export default function Crosswords({ Component, pageProps }: AppProps) {
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  );
+}

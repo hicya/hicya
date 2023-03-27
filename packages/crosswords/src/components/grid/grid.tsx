@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { Puzzle } from "@/types/puzzle";
+import { Puzzle } from "@/features/puzzle/types";
 
 type GridProps = {
   puzzle: Puzzle;
