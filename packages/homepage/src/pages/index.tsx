@@ -3,18 +3,26 @@ import Image from "next/image";
 import { Header } from "@/components/header/header";
 import Content from "@/components/layout/content/content";
 import { source } from "@/styles/fonts";
+import React from "react";
 
 import splashImg from "../../public/splash.jpg";
-import css from "./index.styles";
 
 function Index() {
   return (
-    <div css={css}>
+    <div
+      css={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        fontSize: "16px",
+      }}
+    >
       <Header />
       <div css={{ position: "relative", height: "900px" }}>
         <Image
           src={splashImg}
           css={{ width: "100%", height: "100%", objectFit: "cover" }}
+          alt="splash"
         />
         <div
           css={{

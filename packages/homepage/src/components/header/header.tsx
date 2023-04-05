@@ -26,6 +26,7 @@ export function Header() {
             >
               {menuItems.map((item) => (
                 <a
+                  key={item.title}
                   href={item.href}
                   css={{
                     textDecoration: "none",
